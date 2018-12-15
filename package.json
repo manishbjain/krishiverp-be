@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/manishbjain/krishiverp-be/issues"
   },
-  "homepage": "https://github.com/manishbjain/krishiverp-be#readme"
+  "homepage": "https://github.com/manishbjain/krishiverp-be#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
+  }
 }
