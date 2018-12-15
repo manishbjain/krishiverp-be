@@ -1,0 +1,19 @@
+{
+  "name": "krishiverp-be",
+  "version": "1.0.0",
+  "description": "krishiv-erp backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishbjain/krishiverp-be.git"
+  },
+  "author": "Manish Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishbjain/krishiverp-be/issues"
+  },
+  "homepage": "https://github.com/manishbjain/krishiverp-be#readme"
+}
