@@ -2,6 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 // Local imports
 
@@ -9,6 +10,7 @@ const { mongoose } = require('./db.js');
 
 var app = express();
 app.use(bodyParser.json());
+app.use(cors({ origin: 'http://localhost:4200' }));
 
 // Call the Express Server using the following code.
 

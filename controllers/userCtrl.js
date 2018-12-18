@@ -64,14 +64,16 @@ router.put('/:id', (req,res) => {
         reportsto: req.body.reportsto,
         permissionlevel: req.body.permissionlevel,
         username: req.body.username,
-        password: req.body.password  
+        password: req.body.password 
     };
     
-    User.findByIdandUpdate(req.params.id, {$set: usr}, { new : true }, (err, docs) => {
+    User.findByIdAndUpdate(req.params.id, {$set: usr}, { new : true }, (err, docs) => {
     if(!err)  {res.send(docs);} 
     else { console.log('Error in User save :' + JSON.stringify(err, undefined, 2)); } 
     });
     });
+
+  
 
 
     //Delete User by id
@@ -80,7 +82,7 @@ router.put('/:id', (req,res) => {
         if (!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id: ${req.params.id}`);
         
-        User.findByIdandRemove(req.params.id, (err, doc) => {
+        User.findByIdAndRemove(req.params.id, (err, docs) => {
         if(!err)  {res.send(docs);} 
         else { console.log('Error in Deleting User :' + JSON.stringify(err, undefined, 2)); } 
         });
