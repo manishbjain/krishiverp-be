@@ -5,17 +5,16 @@ const bodyParser = require('body-parser');
 
 // Local imports
 
-const  { mongoose } = require('./db.js');
-var app = express();
-app.use(bodyParser.json());   
+const { mongoose } = require('./db.js');
 
-//app.use(bodyparser.json());
+var app = express();
+app.use(bodyParser.json());
 
 // Call the Express Server using the following code.
 
-app.listen(3000,() => console.log('Server started at port: 3000'));
+app.listen(3000, () => console.log('Server started at port: 3000'));
 
-//import employeecontroller
+//import Usercontroller
 
 var userCtrl = require('./controllers/userCtrl.js');
 

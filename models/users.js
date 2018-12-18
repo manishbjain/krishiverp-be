@@ -10,8 +10,8 @@ var User = mongoose.model('User', {
     secondarydept: {type: String},
     reportsto: {type: String},
     permissionlevel: {type: Number, required: true},
-    username: {type: Number, required: true, unique:true},
+    username: {type: String, required: true, unique:true},
     password: {type: String}     
 });
 
-module.exports = {User};
+module.exports = { User };
