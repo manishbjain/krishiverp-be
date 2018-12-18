@@ -2,7 +2,7 @@ const express = require ('express');
 var router = express.Router();
 var ObjectId = require('mongoose').Types.ObjectId;
 
-var { User } = require('../models/users'); // CHECK - Flower Brackets Required for user ?
+var User  = require('../models/users'); // CHECK - Flower Brackets Required for user ?
 
 //Get (Retrieve) all Users
 
@@ -72,9 +72,6 @@ router.put('/:id', (req,res) => {
     else { console.log('Error in User save :' + JSON.stringify(err, undefined, 2)); } 
     });
     });
-
-  
-
 
     //Delete User by id
 
